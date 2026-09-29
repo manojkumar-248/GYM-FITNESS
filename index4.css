@@ -1,0 +1,620 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.weboverall {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: #050808;
+
+      scroll-behavior: smooth;
+}
+
+.dis1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--============================
+-----------nav head  --========
+=============================---*/
+.head {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    /* color: white; */
+    width: 97%;
+    border-radius: 45px;
+    top:1px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    padding: 12px 19px 8px;
+
+    animation: topbar 1.3s forwards linear;
+    animation-delay: 0s;
+    opacity: 0;
+    background-color: transparent;
+
+        backdrop-filter: blur(5px)  brightness(120%);
+}
+
+.head>input,
+label {
+    display: none;
+    font-size: 18px;
+}
+
+.logo {
+    PADDING: 8px 8px;
+    font-weight: 800;
+    background-color: var(--color);
+    font-size: 14.5px;
+    color: white;
+    width: 180px;
+    border-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* transform: rotate(-8deg); */
+
+}
+
+#checkbar:checked+.rightsubnav {
+    left: 0px;
+    /* background-color: brown; */
+}
+
+.owncheckbar {
+    width: 28px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.5px;
+}
+
+.owncheckbar span {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;;
+    height: 3.4px;
+    width: 100%;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.owncheckbar span img{
+    width:100%;
+    height:100%;
+}
+.owncheckbar span i{
+    font-size: 31px;
+    color:white;;
+}
+
+#checkbar:checked+.owncheckbar span:nth-child(1) {
+    transform: rotate(43deg) translate(4px, 6px);
+    /* transform: rotate(43deg) translate(2px, -6px); */
+}
+
+#checkbar:checked+.owncheckbar span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbar:checked+.owncheckbar span:nth-child(3) {
+    transform: rotate(-43deg) translate(4px, -7px);
+    /* transform: rotate(-43deg) translate(-1px, -7px); */
+
+}
+
+/* #checkbar:checked~.rightsubnav {
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.rightsubnav {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+}
+
+.rightsubnav>.links {
+    padding: 2px 14px;
+    transition: all 1.2s;
+    margin: auto;
+    gap: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.rightsubnav>.links a {
+    text-decoration: none;
+    /* font-weight: bold; */
+    transition: all 1.4s;
+    position: relative;
+    padding: 3.5px 7px;
+    /* background-color: brown; */
+    color: white;
+    font-size: 16.6px;
+    font-weight: 700;
+}
+
+.nav-bt {
+    background-color: var(--color);
+    color: white;
+    border-radius: 19px;
+    padding: 11px 22px;
+    border: none;
+    outline: none;
+    gap: 4px;
+    font-size: 14.4px;
+    font-weight: bold;
+}
+
+.nav-bt a {
+    text-decoration: none;
+    /* font-weight: bold; */
+    transition: all 1.4s;
+    position: relative;
+    /* background-color: brown; */
+   color: white;
+    border-radius: 19px;
+    border: none;
+    outline: none;
+    gap: 4px;
+    font-size: 16px;
+}
+
+.nav-bt i {
+    padding-right: 9px;
+    margin-right:2px;
+    animation: ring 1.5s infinite linear;
+    font-weight: auto;
+    font-size: 14.4px;
+
+    /* animation-play-state: paused; */
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(-4deg) scale(1);
+    }
+
+    45% {
+        transform: rotate(0deg) scale(1.3);
+
+    }
+
+    71% {
+        transform: rotate(128deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+
+}
+
+:root {
+    --color: coral;
+    --colorteal: #14B8A6;
+}
+
+.page {
+    width: 100%;
+
+}
+
+@keyframes topbar {
+    0% {
+        opacity: 0;
+        top: -45px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 8px;
+    }
+}
+:root {
+    --color: coral;
+    --colorteal: #14B8A6;
+}
+
+.page {
+    width: 100%;
+
+}
+
+/*-------heart lines---*/
+.cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 8px; */
+    gap:2px;
+
+}
+
+.line {
+    width: 58px;
+    height: 1.5px;
+    background-color:rgb(245, 70, 6);
+
+}
+.hi {
+    color: rgb(246, 69, 4);
+    font-size: 20px;
+    padding: 1px 1px;
+
+}
+
+
+
+/*-------------budget plan section =--------------*/
+.plan-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding:31px 0px 45px;
+
+    PADDING-TOP:70PX;
+
+}
+
+.over-plan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 24px;
+    width: 84%;
+    justify-content: space-evenly;
+    padding-top:39px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid coral;
+    min-height: 380px;
+    width: 290px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    padding: 28px 10px 14px;
+}
+
+.plan1 {
+    background-color: var(--colorteal);
+}
+
+.plan2 {
+    background-color: var(--color);
+    background-color: cornflowerblue;
+}
+
+.plan3 {
+    background-color: var(--colorteal);
+}
+
+.plan h2:nth-child(2) {
+    font-size: 28px;
+    font-weight: 00;
+}
+
+.plan h2 span {
+    font-size: 15.1px;
+    ;
+}
+
+.tb-p tr td:first-child {
+    color: var(--color);
+    padding-right: 5px;
+    font-size: 15px;
+    ;
+}
+
+.tb-p tr td:last-child {
+    font-size: 15px;
+    ;
+    padding-bottom: 5px;
+}
+
+.tb-p tr {
+    margin-bottom: 5px;
+}
+
+.bp-bt {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 10px 0px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+/*------------footer sectionn-----------*/
+.ft-section{
+    min-height:28vh;
+    width:98%;
+    background-color: rgb(201, 124, 24);
+      display: flex;
+
+    flex-direction: column;
+    /* width: 85%; */
+    justify-self: center;
+    gap: 16px;
+    padding: 39px 0px 28px;
+
+    background-color: #050808;
+    color:white;
+}
+
+
+.ft-over {
+    display: flex;
+    flex-wrap: wrap;
+    gap:12px;
+    row-gap: 28px;
+}
+
+.ft-1 {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footicon {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+
+}
+
+.iconft {
+    background-color:var(--color);
+    color: white;
+    font-size: 19px;
+    width: 26px;
+    /* height:26px; */
+    padding: 10px 19px 8px;
+    border-radius: 50%;
+}
+
+.ft-2 {
+    width: 64%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 28px;
+    ;
+}
+
+.ft-col1 {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+    padding-left:6px;
+}
+.ft-col1 a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.ft-col2 {
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+    font-weight: 700;
+
+}
+.para-forall{
+    font-size: 13px;
+    font-weight:700;
+}
+
+
+
+
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+
+    .head>label {
+        display: flex;
+
+    }
+
+    .head .rightsubnav {
+        position: fixed;
+        top: 98%;
+        width: 100%;
+        height: 77vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 45px;
+        padding-bottom: 14px;
+        border-radius: 12px;
+        font-size: 19px;
+        left: 120%;
+        color: white;
+        background-color: transparent;
+        backdrop-filter: blur(5px) brightness(120%);
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    #checkbar:checked~.rightsubnav {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*-----------about section---------------*/
+    .abt-headingtxt h1:first-child {
+        width: 410px;
+    }
+
+    .abt-headingtxt p:last-child {
+        font-weight: 700;
+        font-size: 11px;
+        width: 91%
+    }
+
+
+
+
+
+
+     /*=======================
+    ==============footer----------
+    ===========================*/
+    .ft-col1,.ft-col2{
+        width:48%;
+    }
+     .ft-1 {
+        width: 100%;
+    }
+
+    .ft-2 {
+        width: 100%;
+    } 
+
+}
+
+@media only screen and (min-width:445px) and (max-width:600px) {
+    .head>label {
+        display: flex;
+    }
+
+    .head .rightsubnav {
+        position: fixed;
+        top: 98%;
+        width: 100%;
+        height: 77vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 45px;
+        padding-bottom: 13px;
+        border-radius: 12px;
+        font-size: 19px;
+        left: 120%;
+        color: white;
+        background-color: transparent;
+        backdrop-filter: blur(5px) brightness(120%);
+
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    #checkbar:checked~.rightsubnav {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+    /*------------ft-----------*/
+    .ft-1,
+    .ft-2 {
+        width: 100%;
+    }
+
+    .ft-col1,
+    .ft-col2 {
+        width: 100%;
+
+    }
+    /*------------ft-----------*/
+    .ft-1,
+    .ft-2 {
+        width: 100%;
+    }
+
+    .ft-col1,
+    .ft-col2 {
+        width: 100%;
+
+    }
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:445px) {
+    .head>label {
+        display: flex;
+    }
+
+    .head .rightsubnav {
+        position: fixed;
+        top: 98%;
+        width: 100%;
+        height: 77vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 45px;
+        padding-bottom: 13px;
+        border-radius: 12px;
+        font-size: 19px;
+        left: 120%;
+        color: white;
+        background-color: transparent;
+        backdrop-filter: blur(5px) brightness(120%);
+
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    #checkbar:checked~.rightsubnav {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+     /*------------ft-----------*/
+    .ft-1,
+    .ft-2 {
+        width: 100%;
+    }
+
+    .ft-col1,
+    .ft-col2 {
+        width: 100%;
+
+    }
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Make a Reservation </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./goodform.css" />
+</head>
+<body>
+           
+    <div class="overallscreen">
+         <h1 class="hdtop">Make a Reservation</h1>
+        <main class="overallmain">
+
+            <!------------------left-------------->
+            <aside class="left">
+
+                <div class="connection">
+                   <i class="fa-solid fa-clock icon"></i>
+                    <div class="info">
+                        <h4>OPENING HOURS</h4>
+                        <p>Weekdays: 08:45AM - 04:45PM</p>
+                        <p>Weekends: 08:45AM - 04:00PM</p>
+                    </div>
+                </div>
+
+                <div class="connection">
+                    <i class="fa-solid fa-key icon"></i>
+                    <div class="info">
+                        <h4>PICKUP AND COLLECTION TIMES</h4>
+                        <p> Weekdays: 09:00AM - 12:45PM</p>
+                        <p> Weekends: 09:00AM - 12:00PM</p>
+                    </div>
+                </div>
+
+                <div class="connection">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <div class="info">
+                        <h4>ADDRESS</h4>
+                        <p>N0 08 Main Road, Kovilambakkam,Chennai</p>
+                        <p>Only 45 mins from velachery.</p>
+
+                    </div>
+                </div>
+
+
+            </aside>
+
+            <!---------------form-------------------->
+            <form class="formoverall">
+
+                <div class="interinput">
+                    <input type="text" name="fname" placeholder="First Name">
+                    <input type="text" name="flast" placeholder="Last Name">
+                </div>
+                <input class="full" type="text" name="address" placeholder="Address">
+               
+                 <div class="interinput">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="tel" name="phonenumber" placeholder="Phone">
+                </div>
+
+                <div class="interinput">
+                    <input type="date" name="date" placeholder="">
+                    <input type="time" name="time" placeholder="">
+                </div>
+                <select name="selection" class="full">
+                    <option value="0">Dog Grooming</option>
+                    <option value="">Cat Grooming</option>
+                    <option value=""> fish</option>
+                </select>
+                <textarea rows="5" class="full">Message</textarea>
+                <button class="fbt">SEND</button>
+            </form>
+
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>
