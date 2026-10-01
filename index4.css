@@ -280,7 +280,20 @@ label {
     row-gap: 24px;
     width: 84%;
     justify-content: space-evenly;
-    padding-top:39px;
+    padding-top: 39px;
+
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; - itha remove pannu */
+    gap: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    perspective: 1500px;
+    background: transparent;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: hidden;
 }
 
 .plan {
@@ -295,21 +308,96 @@ label {
     position: relative;
     overflow: hidden;
     padding: 28px 10px 14px;
+
+
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    /* padding: 20px; */
+    /* margin-bottom: 0; */
+
+    /* VIDEO LOOP KU MAIN */
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    animation: videoLoop 13s infinite linear;
 }
 
 .plan1 {
-    background-color: var(--colorteal);
+    /* background-color: var(--colorteal); */
+     animation-delay: 0s;
 }
 
 .plan2 {
-    background-color: var(--color);
-    background-color: cornflowerblue;
+    /* background-color: var(--color) ; */
+    /* background-color: cornflowerblue !important; */
+    /* background-color: gold !important; */
+
+    animation-delay: -4.1s;
 }
 
 .plan3 {
-    background-color: var(--colorteal);
+    /* background-color: var(--colorteal); */
+    animation-delay: -8.4s;
 }
 
+@keyframes videoLoop{
+  0%{
+    transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
+    opacity: 1;
+    z-index: 5;
+    filter: brightness(1);
+
+    background-color: var(--color); 
+  }
+  20%{
+    transform: translate3d(-150px, 0, -100px) scale(0.91) rotateY(20deg);
+    opacity: 0.8;
+    z-index: 4;
+    filter: brightness(0.8);
+
+        background-color: transparent; 
+    background-color: var(--color); 
+
+
+  }
+  40%{
+    transform: translate3d(-250px, 0, -200px) scale(0.81) rotateY(30deg);
+    opacity: 0.4;
+    z-index: 1;
+    filter: brightness(0.5);
+
+        background-color: transparent; 
+        backdrop-filter: filter(45px);
+
+  }
+  60%{
+    transform: translate3d(250px, 0, -200px) scale(0.81) rotateY(-30deg);
+    opacity: 0.4;
+    z-index: 1;
+    filter: brightness(0.5);
+
+        background-color: transparent; 
+
+  }
+  80%{
+    transform: translate3d(150px, 0, -100px) scale(0.91) rotateY(-20deg);
+    opacity: 0.8;
+    z-index: 4;
+    filter: brightness(0.8);
+
+        background-color: transparent;
+    background-color: var(--color); 
+     
+  }
+  100%{
+    transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
+    opacity: 1;
+    z-index: 6;
+    filter: brightness(1);
+
+    background-color: var(--color);
+
+  }
+}
 .plan h2:nth-child(2) {
     font-size: 28px;
     font-weight: 00;
