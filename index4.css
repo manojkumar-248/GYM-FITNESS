@@ -13,7 +13,7 @@
     font-family: "Inter", sans-serif;
     background-color: #050808;
 
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .dis1 {
@@ -34,7 +34,7 @@
     /* color: white; */
     width: 97%;
     border-radius: 45px;
-    top:1px;
+    top: 1px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
@@ -45,7 +45,7 @@
     opacity: 0;
     background-color: transparent;
 
-        backdrop-filter: blur(5px)  brightness(120%);
+    backdrop-filter: blur(5px) brightness(120%);
 }
 
 .head>input,
@@ -85,19 +85,23 @@ label {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    background-color: white;;
+    background-color: white;
+    ;
     height: 3.4px;
     width: 100%;
     border-radius: 3px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.owncheckbar span img{
-    width:100%;
-    height:100%;
+
+.owncheckbar span img {
+    width: 100%;
+    height: 100%;
 }
-.owncheckbar span i{
+
+.owncheckbar span i {
     font-size: 31px;
-    color:white;;
+    color: white;
+    ;
 }
 
 #checkbar:checked+.owncheckbar span:nth-child(1) {
@@ -165,7 +169,7 @@ label {
     transition: all 1.4s;
     position: relative;
     /* background-color: brown; */
-   color: white;
+    color: white;
     border-radius: 19px;
     border: none;
     outline: none;
@@ -175,7 +179,7 @@ label {
 
 .nav-bt i {
     padding-right: 9px;
-    margin-right:2px;
+    margin-right: 2px;
     animation: ring 1.5s infinite linear;
     font-weight: auto;
     font-size: 14.4px;
@@ -224,6 +228,7 @@ label {
         top: 8px;
     }
 }
+
 :root {
     --color: coral;
     --colorteal: #14B8A6;
@@ -240,16 +245,17 @@ label {
     justify-content: center;
     align-items: center;
     /* padding-top: 8px; */
-    gap:2px;
+    gap: 2px;
 
 }
 
 .line {
     width: 58px;
     height: 1.5px;
-    background-color:rgb(245, 70, 6);
+    background-color: rgb(245, 70, 6);
 
 }
+
 .hi {
     color: rgb(246, 69, 4);
     font-size: 20px;
@@ -260,6 +266,9 @@ label {
 
 
 /*-------------budget plan section =--------------*/
+ .plan-section .abt-headingtxt{
+        padding-top:28px;
+    }
 .plan-section {
     min-height: 80vh;
     display: flex;
@@ -267,9 +276,9 @@ label {
     align-items: center;
     color: white;
     background-color: black;
-    padding:31px 0px 45px;
+    padding: 31px 0px 45px;
 
-    PADDING-TOP:70PX;
+    PADDING-TOP: 70PX;
 
 }
 
@@ -278,7 +287,7 @@ label {
     flex-wrap: wrap;
     gap: 8px;
     row-gap: 24px;
-    width: 84%;
+    width: 100%;
     justify-content: space-evenly;
     padding-top: 39px;
 
@@ -290,7 +299,7 @@ label {
     padding-bottom: 80px;
     perspective: 1500px;
     background: transparent;
-    height: 500px;
+    min-height: 500px;
     position: relative;
     transform-style: preserve-3d;
     overflow: hidden;
@@ -323,7 +332,7 @@ label {
 
 .plan1 {
     /* background-color: var(--colorteal); */
-     animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .plan2 {
@@ -339,65 +348,71 @@ label {
     animation-delay: -8.4s;
 }
 
-@keyframes videoLoop{
-  0%{
-    transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
-    opacity: 1;
-    z-index: 5;
-    filter: brightness(1);
+@keyframes videoLoop {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
+        opacity: 1;
+        z-index: 5;
+        filter: brightness(1);
 
-    background-color: var(--color); 
-  }
-  20%{
-    transform: translate3d(-150px, 0, -100px) scale(0.91) rotateY(20deg);
-    opacity: 0.8;
-    z-index: 4;
-    filter: brightness(0.8);
+        background-color: var(--color);
+    }
 
-        background-color: transparent; 
-    background-color: var(--color); 
-
-
-  }
-  40%{
-    transform: translate3d(-250px, 0, -200px) scale(0.81) rotateY(30deg);
-    opacity: 0.4;
-    z-index: 1;
-    filter: brightness(0.5);
-
-        background-color: transparent; 
-        backdrop-filter: filter(45px);
-
-  }
-  60%{
-    transform: translate3d(250px, 0, -200px) scale(0.81) rotateY(-30deg);
-    opacity: 0.4;
-    z-index: 1;
-    filter: brightness(0.5);
-
-        background-color: transparent; 
-
-  }
-  80%{
-    transform: translate3d(150px, 0, -100px) scale(0.91) rotateY(-20deg);
-    opacity: 0.8;
-    z-index: 4;
-    filter: brightness(0.8);
+    20% {
+        transform: translate3d(-150px, 0, -100px) scale(0.91) rotateY(20deg);
+        opacity: 0.8;
+        z-index: 4;
+        filter: brightness(0.8);
 
         background-color: transparent;
-    background-color: var(--color); 
-     
-  }
-  100%{
-    transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
-    opacity: 1;
-    z-index: 6;
-    filter: brightness(1);
+        background-color: var(--color);
 
-    background-color: var(--color);
 
-  }
+    }
+
+    40% {
+        transform: translate3d(-250px, 0, -200px) scale(0.81) rotateY(30deg);
+        opacity: 0.4;
+        z-index: 1;
+        filter: brightness(0.5);
+
+        background-color: transparent;
+        backdrop-filter: filter(45px);
+
+    }
+
+    60% {
+        transform: translate3d(250px, 0, -200px) scale(0.81) rotateY(-30deg);
+        opacity: 0.4;
+        z-index: 1;
+        filter: brightness(0.5);
+
+        background-color: transparent;
+
+    }
+
+    80% {
+        transform: translate3d(150px, 0, -100px) scale(0.91) rotateY(-20deg);
+        opacity: 0.8;
+        z-index: 4;
+        filter: brightness(0.8);
+
+        background-color: transparent;
+        background-color: var(--color);
+
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
+        opacity: 1;
+        z-index: 6;
+        filter: brightness(1);
+
+        background-color: var(--color);
+
+    }
 }
+
 .plan h2:nth-child(2) {
     font-size: 28px;
     font-weight: 00;
@@ -440,11 +455,11 @@ label {
 
 
 /*------------footer sectionn-----------*/
-.ft-section{
-    min-height:28vh;
-    width:98%;
+.ft-section {
+    min-height: 28vh;
+    width: 98%;
     background-color: rgb(201, 124, 24);
-      display: flex;
+    display: flex;
 
     flex-direction: column;
     /* width: 85%; */
@@ -453,14 +468,14 @@ label {
     padding: 39px 0px 28px;
 
     background-color: #050808;
-    color:white;
+    color: white;
 }
 
 
 .ft-over {
     display: flex;
     flex-wrap: wrap;
-    gap:12px;
+    gap: 12px;
     row-gap: 28px;
 }
 
@@ -481,7 +496,7 @@ label {
 }
 
 .iconft {
-    background-color:var(--color);
+    background-color: var(--color);
     color: white;
     font-size: 19px;
     width: 26px;
@@ -505,17 +520,18 @@ label {
     flex-direction: column;
     align-items: start;
     gap: 6px;
-    padding-left:6px;
+    padding-left: 6px;
 }
-.ft-col1 a{
-    color:white;
+
+.ft-col1 a {
+    color: white;
     text-decoration: none;
     font-weight: 700;
 }
 
 
 .ft-col2 {
-    width:25%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -523,9 +539,10 @@ label {
     font-weight: 700;
 
 }
-.para-forall{
+
+.para-forall {
     font-size: 13px;
-    font-weight:700;
+    font-weight: 700;
 }
 
 
@@ -582,19 +599,21 @@ label {
 
 
 
-     /*=======================
+    /*=======================
     ==============footer----------
     ===========================*/
-    .ft-col1,.ft-col2{
-        width:48%;
+    .ft-col1,
+    .ft-col2 {
+        width: 48%;
     }
-     .ft-1 {
+
+    .ft-1 {
         width: 100%;
     }
 
     .ft-2 {
         width: 100%;
-    } 
+    }
 
 }
 
@@ -621,6 +640,50 @@ label {
         backdrop-filter: blur(5px) brightness(120%);
 
     }
+    /*-----------------plan-section-------------------*/
+
+    .plan-section .abt-headingtxt{
+        text-align: center;
+    }
+
+    .over-plan {
+        display: flex;
+        flex-wrap: wrap;    
+        gap: 8px;
+        row-gap: 24px;
+        width: 84%;
+        justify-content: space-evenly;
+        padding-top: 39px;
+        min-height:80vh;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid coral;
+        min-height: 380px;
+        width: 290px;
+        border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+        padding: 28px 10px 14px;
+        animation:mm linear;
+    }
+
+    .plan1 {
+        background-color: var(--colorteal);
+    }
+
+    .plan2 {
+        background-color: var(--color);
+        background-color: cornflowerblue;
+    }
+
+    .plan3 {
+        background-color: var(--colorteal);
+    }
 
     .links {
         flex-direction: column;
@@ -644,6 +707,7 @@ label {
         width: 100%;
 
     }
+
     /*------------ft-----------*/
     .ft-1,
     .ft-2 {
@@ -692,8 +756,49 @@ label {
         transform: translateX(-50%);
     }
 
+    /*--------------plan----section------------------*/
+     .plan-section .abt-headingtxt{
+        text-align: center;
+    }
+.over-plan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 24px;
+    width: 84%;
+    justify-content: space-evenly;
+    padding-top:39px;
+}
 
-     /*------------ft-----------*/
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid coral;
+    min-height: 380px;
+    width: 290px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    padding: 28px 10px 14px;
+    animation-name:mm;
+}
+
+.plan1 {
+    background-color: var(--colorteal);
+}
+
+.plan2 {
+    background-color: var(--color);
+    background-color: cornflowerblue;
+}
+
+.plan3 {
+    background-color: var(--colorteal);
+}
+
+    /*------------ft-----------*/
     .ft-1,
     .ft-2 {
         width: 100%;
@@ -705,4 +810,3 @@ label {
 
     }
 }
-
