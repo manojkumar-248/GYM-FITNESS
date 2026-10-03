@@ -87,7 +87,7 @@ label {
     align-items: center;
     background-color: white;
     ;
-    height: 3.4px;
+    height: 3.1px;
     width: 100%;
     border-radius: 3px;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -315,8 +315,7 @@ label {
     width: 290px;
     border-radius: 25px;
     position: relative;
-    overflow: hidden;
-    padding: 28px 10px 14px;
+    padding: 24px 10px 14px;
 
 
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
@@ -421,6 +420,16 @@ label {
 .plan h2 span {
     font-size: 15.1px;
     ;
+}
+.top-pp{
+        position: absolute;
+    top: -10px;
+    background-color: gold;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
 }
 
 .tb-p tr td:first-child {
@@ -667,13 +676,12 @@ label {
         width: 290px;
         border-radius: 25px;
         position: relative;
-        overflow: hidden;
         padding: 28px 10px 14px;
         animation:mm linear;
     }
 
     .plan1 {
-        background-color: var(--colorteal);
+        background-color: var(--color);
     }
 
     .plan2 {
@@ -682,7 +690,7 @@ label {
     }
 
     .plan3 {
-        background-color: var(--colorteal);
+        background-color: var(--color);
     }
 
     .links {
@@ -780,13 +788,12 @@ label {
     width: 290px;
     border-radius: 25px;
     position: relative;
-    overflow: hidden;
     padding: 28px 10px 14px;
     animation-name:mm;
 }
 
 .plan1 {
-    background-color: var(--colorteal);
+    background-color: var(--color);
 }
 
 .plan2 {
@@ -795,7 +802,7 @@ label {
 }
 
 .plan3 {
-    background-color: var(--colorteal);
+    background-color: var(--color);
 }
 
     /*------------ft-----------*/
